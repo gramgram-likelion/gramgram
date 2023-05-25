@@ -31,11 +31,11 @@ spring:
             client-name: Google
             redirect-uri: '${custom.site.baseUrl}/{action}/oauth2/code/{registrationId}'
           facebook:
-            scope:
+            scope: public_profile
             client-name: Facebook
             redirect-uri: '${custom.site.baseUrl}/{action}/oauth2/code/{registrationId}'
           instagram:
-            scope: user_profile,user_media
+            scope: user_profile
             client-name: Instagram
             provider: instagram
             authorization-grant-type: authorization_code
